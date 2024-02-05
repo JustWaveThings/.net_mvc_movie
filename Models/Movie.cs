@@ -5,7 +5,7 @@ namespace MvcMovie.Models;
 
 public class Movie
 {
-    [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+    // [DatabaseGenerated(DatabaseGeneratedOption.None)]
     public int Id { get; set;}
     
     [StringLength(60, MinimumLength = 3)]
