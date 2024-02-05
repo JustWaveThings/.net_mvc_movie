@@ -21,7 +21,7 @@ namespace MvcMovie.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("BOOLEAN");
 
                     b.Property<string>("Genre")
                         .HasColumnType("TEXT");
