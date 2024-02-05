@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
@@ -15,8 +16,7 @@ namespace MvcMovie.Migrations
                 name: "Movie",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false),
                     Title = table.Column<string>(type: "TEXT", nullable: true),
                     ReleaseDate = table.Column<DateTime>(type: "TEXT", nullable: false),
                     Genre = table.Column<string>(type: "TEXT", nullable: true),
