@@ -6,6 +6,7 @@ namespace MvcMovie.Models;
 public class Movie
 {
     // [DatabaseGenerated(DatabaseGeneratedOption.None)]
+   
     public int Id { get; set;}
     
     [StringLength(60, MinimumLength = 3)]
@@ -31,3 +32,5 @@ public class Movie
     [StringLength(5)]
     public string? Rating { get; set; }
 }
+
+
