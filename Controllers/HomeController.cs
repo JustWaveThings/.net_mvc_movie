@@ -18,7 +18,12 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Customers()
+    {
+        return View();
+    }
+
+    public IActionResult Locations()
     {
         return View();
     }
